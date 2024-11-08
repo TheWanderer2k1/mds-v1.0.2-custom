@@ -63,7 +63,7 @@ const ApplicationLogo: FC<ApplicationLogoProps> = ({
       //     return <ConsoleSingle inverse={!!inverse} onClick={onClick} />;
       // }
       // break;
-      <ConsoleAGPL inverse={!!inverse} onClick={onClick} />;
+      return <ConsoleAGPL inverse={!!inverse} onClick={onClick} />;
     case "directpv":
       return <DirectPV inverse={!!inverse} onClick={onClick} />;
     case "subnet":
