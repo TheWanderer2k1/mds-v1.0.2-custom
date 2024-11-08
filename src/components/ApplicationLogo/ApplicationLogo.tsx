@@ -52,17 +52,18 @@ const ApplicationLogo: FC<ApplicationLogoProps> = ({
 }) => {
   switch (applicationName) {
     case "console":
-      switch (subVariant) {
-        case "standard":
-          return <ConsoleStandard inverse={!!inverse} onClick={onClick} />;
-        case "enterprise":
-          return <ConsoleEnterprise inverse={!!inverse} onClick={onClick} />;
-        case "AGPL":
-          return <ConsoleAGPL inverse={!!inverse} onClick={onClick} />;
-        default:
-          return <ConsoleSingle inverse={!!inverse} onClick={onClick} />;
-      }
-      break;
+      // switch (subVariant) {
+      //   case "standard":
+      //     return <ConsoleStandard inverse={!!inverse} onClick={onClick} />;
+      //   case "enterprise":
+      //     return <ConsoleEnterprise inverse={!!inverse} onClick={onClick} />;
+      //   case "AGPL":
+      //     return <ConsoleAGPL inverse={!!inverse} onClick={onClick} />;
+      //   default:
+      //     return <ConsoleSingle inverse={!!inverse} onClick={onClick} />;
+      // }
+      // break;
+      <ConsoleAGPL inverse={!!inverse} onClick={onClick} />;
     case "directpv":
       return <DirectPV inverse={!!inverse} onClick={onClick} />;
     case "subnet":
